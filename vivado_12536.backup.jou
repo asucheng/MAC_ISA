@@ -1,0 +1,57 @@
+#-----------------------------------------------------------
+# Vivado v2020.2 (64-bit)
+# SW Build 3064766 on Wed Nov 18 09:12:45 MST 2020
+# IP Build 3064653 on Wed Nov 18 14:17:31 MST 2020
+# Start of session at: Tue Mar 30 09:55:38 2021
+# Process ID: 12536
+# Current directory: D:/Documents/pPIM/pPIM_ISA
+# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent23388 D:\Documents\pPIM\pPIM_ISA\pPIM_ISA.xpr
+# Log file: D:/Documents/pPIM/pPIM_ISA/vivado.log
+# Journal file: D:/Documents/pPIM/pPIM_ISA\vivado.jou
+#-----------------------------------------------------------
+start_gui
+open_project D:/Documents/pPIM/pPIM_ISA/pPIM_ISA.xpr
+update_compile_order -fileset sources_1
+launch_simulation
+source tb_ISA.tcl
+close_sim
+# Disabling source management mode.  This is to allow the top design properties to be set without GUI intervention.
+set_property source_mgmt_mode None [current_project]
+set_property top registertb [get_filesets sim_1]
+set_property top_lib xil_defaultlib [get_filesets sim_1]
+# Re-enabling previously disabled source management mode.
+set_property source_mgmt_mode All [current_project]
+update_compile_order -fileset sim_1
+# Disabling source management mode.  This is to allow the top design properties to be set without GUI intervention.
+set_property source_mgmt_mode None [current_project]
+set_property top regmn [current_fileset]
+# Re-enabling previously disabled source management mode.
+set_property source_mgmt_mode All [current_project]
+update_compile_order -fileset sources_1
+launch_simulation
+launch_simulation
+source registertb.tcl
+relaunch_sim
+relaunch_sim
+relaunch_sim
+relaunch_sim
+relaunch_sim
+step
+close_sim
+# Disabling source management mode.  This is to allow the top design properties to be set without GUI intervention.
+set_property source_mgmt_mode None [current_project]
+set_property top microtableTB [get_filesets sim_1]
+set_property top_lib xil_defaultlib [get_filesets sim_1]
+# Re-enabling previously disabled source management mode.
+set_property source_mgmt_mode All [current_project]
+# Disabling source management mode.  This is to allow the top design properties to be set without GUI intervention.
+set_property source_mgmt_mode None [current_project]
+set_property top Microtable [current_fileset]
+# Re-enabling previously disabled source management mode.
+set_property source_mgmt_mode All [current_project]
+update_compile_order -fileset sim_1
+update_compile_order -fileset sources_1
+launch_simulation
+source microtableTB.tcl
+relaunch_sim
+close_sim

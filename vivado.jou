@@ -1,0 +1,20 @@
+#-----------------------------------------------------------
+# Vivado v2020.2 (64-bit)
+# SW Build 3064766 on Wed Nov 18 09:12:45 MST 2020
+# IP Build 3064653 on Wed Nov 18 14:17:31 MST 2020
+# Start of session at: Thu Apr  1 20:06:11 2021
+# Process ID: 15156
+# Current directory: D:/Documents/pPIM/pPIM_ISA
+# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent13816 D:\Documents\pPIM\pPIM_ISA\pPIM_ISA.xpr
+# Log file: D:/Documents/pPIM/pPIM_ISA/vivado.log
+# Journal file: D:/Documents/pPIM/pPIM_ISA\vivado.jou
+#-----------------------------------------------------------
+start_gui
+open_project D:/Documents/pPIM/pPIM_ISA/pPIM_ISA.xpr
+update_compile_order -fileset sources_1
+launch_simulation
+source tb_ISA.tcl
+add_bp {D:/Documents/pPIM/pPIM_ISA/pPIM_ISA.srcs/sim_1/imports/pPIM/tb_ISA.v} 44
+relaunch_sim
+run 100 ns
+close_sim
